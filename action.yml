@@ -1,5 +1,9 @@
 
 name: 'Infisical run action'
+author: "Aman Samal Magar"
+branding:
+  icon: "lock"
+  color: "yellow"
 description: 'Infisical is an open source secret management very new to the market.'
 inputs:
   command:  # id of input
