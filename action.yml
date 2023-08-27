@@ -1,6 +1,6 @@
 
-name: 'Insifical run action'
-description: 'Insifical is an open source secret management very new to the market.'
+name: 'Infisical run action'
+description: 'Infisical is an open source secret management very new to the market.'
 inputs:
   command:  # id of input
     description: 'Infisical command to run '
