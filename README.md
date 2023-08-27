@@ -17,7 +17,7 @@ You can check out their project **[here](https://github.com/Infisical/infisical)
 Supported commands:
 
 ```
-- infisical scan --verbose 
+infisical scan --verbose 
 
 ```     
 
