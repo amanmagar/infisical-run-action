@@ -1,0 +1,23 @@
+
+name: 'Insifical run action'
+description: 'Insifical is an open source secret management very new to the market.'
+inputs:
+  command:  # id of input
+    description: 'Infisical command to run '
+    required: true
+    default: '--version'
+runs:
+  using: "composite"
+  steps:
+    - name: Install infisical-cli
+      shell: bash
+      run: curl -1sLf  'https://dl.cloudsmith.io/public/infisical/infisical-cli/setup.deb.sh' | sudo -E bash
+    - name: apt update and install infisical
+      shell: bash
+      run: | 
+        sudo apt-get update && sudo apt-get install -y infisical
+    - name: Provide the infisical command to run
+      shell: bash
+      run: infisical $COMMAND
+      env:  
+        COMMAND: ${{inputs.command}}
